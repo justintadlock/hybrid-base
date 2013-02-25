@@ -1,0 +1,650 @@
+/**
+ * Theme Name: Hybrid Base
+ * Theme URI: http://justintadlock.com
+ * Description: A description of your theme.
+ * Tags: theme-options
+ * Version: 0.1.0-alpha
+ * Author: Justin Tadlock
+ * Author URI: http://justintadlock.com
+ */
+
+/**
+ * Fonts - Declare @font-face here.
+ * --------------------------------------------------------------------------- */
+
+/**
+ * Defaults
+ * --------------------------------------------------------------------------- */
+
+html {
+	font-size: 16px;
+}
+
+/* === Body === */
+
+body {
+}
+
+/* === Links === */
+
+a {}
+
+	a:hover {}
+
+/* === Headers === */
+
+h1 {}
+
+h2 {}
+
+h3 {}
+
+h4 {}
+
+h5 {}
+
+h6 {}
+
+/* === Blockquotes, quotes, and cites === */
+
+blockquote {}
+
+	blockquote cite {}
+
+/* === Acronyms and abbreviations === */
+
+acronym {}
+
+abbr {}
+
+/* === Code and Preformatted text === */
+
+code {}
+
+pre {}
+
+	pre code {}
+
+/* === <address> tag === */
+
+address {}
+
+/* === Lists === */
+
+ul {}
+
+	ul li {}
+
+ol {}
+
+	ol li {}
+
+dl {}
+
+	dt {}
+
+	dd {}
+
+/* === Tables === */
+
+table {}
+
+	caption {}
+
+	thead {}
+
+	tfoot {}
+
+	tbody {}
+
+	tr {}
+
+	th {}
+
+	td {}
+
+	/* wp-calendar <table> */
+
+	#wp-calendar {}
+
+/* === Embeds === */
+
+object {}
+
+embed {}
+
+iframe {}
+
+video {}
+
+/* === Forms === */
+
+form {}
+
+	fieldset {}
+
+		fieldset legend {}
+
+	label {}
+
+	input {}
+
+		/* Not all types, but these are more common for themes. */
+		input[type="button"] {}
+		input[type="checkbox"] {}
+		input[type="email"] {}
+		input[type="password"] {}
+		input[type="radio"] {}
+		input[type="reset"] {}
+		input[type="search"] {}
+		input[type="submit"] {}
+		input[type="text"] {}
+		input[type="url"] {}
+
+	textarea {}
+
+	select {}
+
+		select optgroup {}
+
+		select option {}
+
+	button {}
+
+/* === Alignement (WP classes) === */
+
+.alignleft {}
+
+.alignright {}
+
+.aligncenter {}
+
+.alignnone {}
+
+
+/**
+ * Images
+ * --------------------------------------------------------------------------- */
+
+img {}
+
+	a img {}
+
+/* === WP editor image sizes === */
+
+img.size-thumbnail {}
+
+img.size-medium {}
+
+img.size-large {}
+
+img.size-full {}
+
+/* === Thumbnails === */
+
+.thumbnail {}
+
+/* === Captions === */
+
+.wp-caption {}
+
+	.wp-caption img {}
+
+	.wp-caption-text {}
+
+		.wp-caption-text a {}
+		.wp-caption-text a:hover {}
+
+/* === Gallery === */
+
+.gallery {}
+
+	.gallery .gallery-item {}
+
+		.gallery-icon {}
+
+			.gallery .gallery-icon img {}
+
+		.gallery .gallery-caption {}
+
+/* === Avatars === */
+
+.avatar {}
+
+	a .avatar {}
+	a:hover .avatar {}
+
+/**
+ * Layout
+ * --------------------------------------------------------------------------- */
+
+	#container {}
+
+		.layout-1c #container {}
+		.layout-2c-l #container {}
+		.layout-2c-r #container {}
+		.layout-3c-l #container {}
+		.layout-3c-r #container {}
+		.layout-3c-c #container {}
+
+		#header {}
+
+		#menu-primary {}
+
+		#menu-secondary {}
+
+		#main {}
+
+			#content {}
+
+			#sidebar-primary {}
+
+			#sidebar-secondary {}
+
+		#menu-subsidiary {}
+
+		#sidebar-subsidiary {}
+
+		#footer {}
+
+/**
+ * Header
+ * --------------------------------------------------------------------------- */
+
+#header {}
+
+	#branding {}
+
+		#site-title {}
+
+			#site-title a {}
+			#site-title a:hover {}
+
+		#site-description {}
+
+/**
+ * Menus
+ * --------------------------------------------------------------------------- */
+
+.menu-toggle {}
+
+/* ====== Primary Menu ====== */
+
+#menu-primary {}
+
+	#menu-primary .wrap {}
+
+		#menu-primary ul {}
+
+			#menu-primary ul ul {}
+
+			#menu-primary li {}
+			#menu-primary li.current-menu-item {}
+
+				#menu-primary li a {}
+				#menu-primary li a:hover {}
+
+/* ====== Secondary Menu ====== */
+
+#menu-secondary {}
+
+	#menu-secondary .wrap {}
+
+		#menu-secondary ul {}
+
+			#menu-secondary ul ul {}
+
+			#menu-secondary li {}
+			#menu-secondary li.current-menu-item {}
+
+				#menu-secondary li a {}
+				#menu-secondary li a:hover {}
+
+/* ====== Subsidiary Menu ====== */
+
+#menu-subsidiary {}
+
+	#menu-subsidiary .wrap {}
+
+		#menu-subsidiary ul {}
+
+			#menu-subsidiary li {}
+			#menu-subsidiary li.current-menu-item {}
+
+				#menu-subsidiary li a {}
+				#menu-subsidiary li a:hover {}
+
+/**
+ * Content
+ * --------------------------------------------------------------------------- */
+
+/* ====== BREADCRUMBS ====== */
+
+.breadcrumb-trail {}
+
+	.breadcrumb-trail .trail-begin {}
+
+	.breadcrumb-trail .trail-end {}
+
+	.breadcrumb-trail .sep {}
+
+	.breadcrumb-trail a {}
+	.breadcrumb-trail a:hover {}
+
+/* ====== POSTS ====== */
+
+.hentry  {}
+.sticky {}
+
+	/* === Post Header === */
+
+	.entry-header {}
+
+		.entry-title {}
+
+			.entry-title a {}
+			.entry-title a:hover {}
+
+		.entry-byline {}
+
+			.entry-byline a {}
+			.entry-byline a:hover {}
+
+			.entry-byline .published {}
+
+	/* === Post content and excerpts === */
+
+	.entry-content {}
+
+	.entry-summary {}
+
+	/* === Post Footer === */
+
+	.entry-footer {}
+
+		.entry-meta {}
+
+			.entry-meta a {}
+			.entry-meta a:hover {}
+
+			.entry-meta .published {}
+
+			.entry-meta .category {}
+			.entry-meta .post_tag {}
+
+	/* === Asides === */
+
+	.format-aside {}
+
+		.format-aside .entry-content a.permalink {}
+
+	/* === Chats === */
+
+	.format-chat {}
+
+		.format-chat .chat-row {}
+
+			.format-chat .chat-text {}
+
+			.format-chat cite {}
+
+			.format-chat .chat-speaker-1 {}
+			.format-chat .chat-speaker-2 {}
+			.format-chat .chat-speaker-3 {}
+			.format-chat .chat-speaker-4 {}
+			.format-chat .chat-speaker-5 {}
+			.format-chat .chat-speaker-6 {}
+			.format-chat .chat-speaker-7 {}
+			.format-chat .chat-speaker-8 {}
+			.format-chat .chat-speaker-9 {}
+
+	/* === Links === */
+
+	.format-link {}
+
+		.format-link .entry-title {}
+
+			.format-link .entry-title a {}
+			.format-link .entry-title a:hover {}
+
+				.format-link .entry-title a .meta-nav {}
+
+	/* === Galleries === */
+
+	.format-gallery {}
+
+		.format-gallery .image-count {}
+
+	/* === Quotes === */
+
+	.format-quote {}
+
+		.format-quote blockquote {}
+
+			.format-quote blockquote cite {}
+
+	/* === Status updates === */
+
+	.format-status
+
+		.format-status .avatar {}
+
+	/* === Audio and Video === */
+
+	.format-video {}
+	.format-audio {}
+
+
+/* ====== Attachment Meta (on image attachment pages) ====== */
+
+.attachment-meta {}
+
+	.attachment-meta .image-gallery {}
+
+	.attachment-meta .image-info {}
+
+		.image-info ul {}
+
+			.image-info ul li {}
+
+				.image-info .prep {}
+
+				.image-info .image-data {}
+
+
+/* ====== LOOP META ====== */
+
+.loop-meta {}
+
+	.loop-title {}
+
+	.loop-description {}
+
+/* ====== PAGINATION ====== */
+
+/* === Single posts using <!--nextpage--> === */
+
+.page-links {}
+
+	.page-links .before {}
+
+	.page-links a {}
+	.page-links a:hover {}
+
+/* === Single post navigation (between different posts) === */
+
+.loop-nav {}
+
+	.loop-nav a {}
+	.loop-nav a:hover {}
+
+	.loop-nav a[rel="prev"] {}
+
+	.loop-nav a[rel="next"] {}
+
+/* === Archive-type pages === */
+
+.loop-pagination {}
+
+	.loop-pagiation .page-numbers {}
+
+	.loop-pagination a.page-numbers {}
+	.loop-pagination a.page-numbers:hover {}
+
+	.page-numbers.current {}
+
+/* === Comments pagination === */
+
+.comments-nav {}
+
+	.comments-nav a {}
+	.comments-nav a:hover {}
+
+	.comments-nav .page-numbers {}
+
+/**
+ * Sidebars and widgets
+ * --------------------------------------------------------------------------- */
+
+/* ====== General ====== */
+
+.sidebar {}
+
+	.widget {}
+
+		.widget-title {}
+
+/* ====== Specific ====== */
+
+#sidebar-primary {}
+
+#sidebar-secondary {}
+
+#sidebar-subsidiary {}
+
+#sidebar-header {}
+
+#sidebar-before-content {}
+
+#sidebar-after-content {}
+
+#sidebar-after-singular {}
+
+
+/**
+ * Comments Template
+ * --------------------------------------------------------------------------- */
+
+#comments-template {}
+
+/* ====== COMMENTS ======= */
+
+#comments {}
+
+	#comments-number {}
+
+	/* === Comments closed message === */
+
+	.comments-closed {}
+
+	.comments-closed.pings-open {}
+
+	/* === Comment list === */
+
+	ol.comment-list {}
+
+		ol.comment-list ol.children {}
+
+		/* === Individual comments */
+
+		li.comment {}
+
+		li.ping {}
+
+		li.bypostauthor {}
+
+			/* === Avatars === */
+
+			.comment-list .avatar {}
+
+			/* === Meta === */
+
+			.comment-meta {}
+
+				.comment-author {}
+
+					.comment-author cite {}
+
+				.comment-meta .published {}
+
+			/* === Comment text/content === */
+
+			.comment-content {}
+
+
+			/* === Reply link === */
+
+			.comment-reply-link {}
+			.comment-reply-link:hover {}
+
+
+/* ====== RESPOND (COMMENT FORM) ====== */
+
+#respond {}
+
+	#reply-title {}
+
+		#reply-title small {}
+
+	#respond .log-in-out {}
+
+	#respond label {}
+
+		#respond label .required {}
+
+	#respond input[type="text"] {}
+	#respond input[type="text"]:focus {}
+
+	#respond input[type="url"] {}
+	#respond input[type="url"]:focus {}
+
+	#respond input[type="email"] {}
+	#respond input[type="email"]:focus {}
+
+	#respond input[type="submit"] {}
+	#respond input[type="submit"]:focus {}
+	#respond input[type="submit"]:hover {}
+
+	#respond textarea {}
+	#respond textarea:focus {}
+
+
+/**
+ * Footer
+ * --------------------------------------------------------------------------- */
+
+#footer {}
+
+	#footer .copyright {}
+
+	#footer .credit {}
+
+	#footer a {}
+	#footer a:hover {}
+
+/**
+ * Media Queries
+ * --------------------------------------------------------------------------- */
+
+
+/**
+ * Clearing Floats
+ * --------------------------------------------------------------------------- */
+
+.clearfix::after {
+	content:    ".";
+	display:    block;
+	height:     0;
+	clear:      both;
+	visibility: hidden;
+}
