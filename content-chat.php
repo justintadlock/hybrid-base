@@ -44,7 +44,7 @@
 		<?php } ?>
 
 		<footer class="entry-footer">
-			<?php echo apply_atomic_shortcode( 'entry_meta', '<div class="entry-meta">' . __( '[post-format-link] published on [entry-published] [entry-permalink before="| "] [entry-comments-link before="| "] [entry-edit-link before="| "]', 'hybrid-base' ) . '</div>' ); ?>
+			<?php echo apply_atomic_shortcode( 'entry_meta', '<div class="entry-meta">' . __( '[post-format-link] published on [entry-published] [entry-comments-link before="| "] [entry-edit-link before="| "]', 'hybrid-base' ) . '</div>' ); ?>
 		</footer>
 
 	<?php } ?>

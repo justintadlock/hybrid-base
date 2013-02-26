@@ -13,7 +13,7 @@
 		</div><!-- .entry-content -->
 
 		<footer class="entry-footer">
-			<?php echo apply_atomic_shortcode( 'entry_meta', '<div class="entry-meta">' . __( '[entry-terms before="Tagged "]', 'hybrid-base' ) . '</div>' ); ?>
+			<?php echo apply_atomic_shortcode( 'entry_meta', '<div class="entry-meta">' . __( '[entry-terms before="Posted in " taxonomy="category"] [entry-terms before="| Tagged "]', 'hybrid-base' ) . '</div>' ); ?>
 		</footer><!-- .entry-footer -->
 
 	<?php } else { ?>
