@@ -1,9 +1,9 @@
-<?php if ( is_active_sidebar( 'susidiary' ) ) { ?>
+<?php if ( is_active_sidebar( 'subsidiary' ) ) { ?>
 
-	<aside id="sidebar-susidiary" class="sidebar">
+	<aside id="sidebar-subsidiary" class="sidebar">
 
-		<?php dynamic_sidebar( 'susidiary' ); ?>
+		<?php dynamic_sidebar( 'subsidiary' ); ?>
 
-	</aside><!-- #sidebar-susidiary .aside -->
+	</aside><!-- #sidebar-subsidiary .aside -->
 
 <?php } ?>
