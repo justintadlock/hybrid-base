@@ -91,4 +91,4 @@ if ( is_singular() )
 
 	<?php } // End if check ?>
 
-<div><!-- .loop-meta -->
+</div><!-- .loop-meta -->
