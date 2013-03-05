@@ -143,6 +143,33 @@ function hybrid_base_theme_setup() {
  */
 
 	/**
+	 * Content template.  This is an early version of what a content template function will look like
+	 * in future versions of Hybrid Core.
+	 *
+	 * @since  0.1.0
+	 * @access public
+	 * @return void
+	 */
+	function hybrid_base_get_content_template() {
+
+		$templates = array();
+		$post_type = get_post_type();
+
+		if ( post_type_supports( $post_type, 'post-formats' ) ) {
+
+			$post_format = get_post_format() ? get_post_format() : 'standard';
+
+			$templates[] = "content-{$post_type}-{$post_format}.php";
+			$templates[] = "content-{$post_format}.php";
+		}
+
+		$templates[] = "content-{$post_type}.php";
+		$templates[] = 'content.php';
+
+		return locate_template( $templates, true, false );
+	}
+
+	/**
 	 * Sidebar parameter defaults.
 	 *
 	 * @since  0.1.0

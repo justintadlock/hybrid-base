@@ -4,7 +4,7 @@
 
 		<?php the_post(); // Loads the post data. ?>
 
-		<?php get_template_part( 'content', ( post_type_supports( get_post_type(), 'post-formats' ) ? get_post_format() : get_post_type() ) ); ?>
+		<?php hybrid_base_get_content_template(); // Loads the content template. ?>
 
 		<?php if ( is_singular() ) { ?>
 
