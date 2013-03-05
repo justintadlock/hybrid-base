@@ -81,7 +81,7 @@ function hybrid_base_theme_setup() {
 	/* Enable custom template hierarchy. */
 	add_theme_support( 'hybrid-core-template-hierarchy' );
 
-	/* Enable theme layouts. */
+	/* Enable theme layouts (need to add stylesheet support). */
 	add_theme_support( 
 		'theme-layouts', 
 		array( '1c', '2c-l', '2c-r' ), 
