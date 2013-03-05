@@ -1,7 +1,7 @@
 	<article id="post-0" class="<?php hybrid_entry_class(); ?>">
 
 		<header class="entry-header">
-			<h1 class="entry-title"><?php __( 'Nothing found', 'hybrid-base' ); ?></h1>
+			<h1 class="entry-title"><?php _e( 'Nothing found', 'hybrid-base' ); ?></h1>
 		</header>
 
 		<div class="entry-content">
