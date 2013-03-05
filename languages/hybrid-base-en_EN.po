@@ -1,0 +1,1216 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Hybrid Base WordPress Theme\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-02-25 13:44-0600\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Justin Tadlock <justin@justintadlock.com>\n"
+"Language-Team:  <justin@justintadlock.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _e;__;esc_attr_e;esc_attr__;esc_html_e;esc_html__;_x;"
+"_n;_x:1,2c;_n:1,2\n"
+"X-Poedit-Basepath: ../\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:12
+msgid "Whoah! You broke something!"
+msgstr ""
+
+#: 404.php:18
+#, php-format
+msgid ""
+"Just kidding! You tried going to %s, which doesn't exist, so that means I "
+"probably broke something."
+msgstr ""
+
+#: 404.php:21
+msgid ""
+"The following is a list of the latest posts from the blog. Maybe it will "
+"help you find what you're looking for."
+msgstr ""
+
+#: attachment-image.php:15
+#, php-format
+msgid "Sizes: %s"
+msgstr ""
+
+#: attachment-image.php:27 content-attachment.php:11
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: attachment-image.php:28 content-aside.php:12 content-aside.php:23
+#: content-attachment.php:12 content-attachment.php:28 content-audio.php:12
+#: content-audio.php:35 content-chat.php:18 content-chat.php:41
+#: content-gallery.php:12 content-gallery.php:31 content-image.php:12
+#: content-image.php:27 content-link.php:12 content-link.php:31
+#: content-page.php:11 content-page.php:27 content-quote.php:12
+#: content-quote.php:23 content-status.php:13 content-status.php:28
+#: content-video.php:12 content-video.php:37 content.php:12 content.php:29
+msgid "Pages:"
+msgstr ""
+
+#: attachment-image.php:42
+msgid "Gallery"
+msgstr ""
+
+#: comments-loop-error.php:4
+#, php-format
+msgid ""
+"Comments are closed, but <a href=\"%s\" title=\"Trackback URL for this post"
+"\">trackbacks</a> and pingbacks are open."
+msgstr ""
+
+#: comments-loop-error.php:10
+msgid "Comments are closed."
+msgstr ""
+
+#: comments-loop-nav.php:4
+msgid "&larr; Previous"
+msgstr ""
+
+#: comments-loop-nav.php:5
+#, php-format
+msgid "Page %1$s of %2$s"
+msgstr ""
+
+#: comments-loop-nav.php:6
+msgid "Next &rarr;"
+msgstr ""
+
+#: comments-loop.php:3
+msgid "One Response"
+msgstr ""
+
+#: comments-loop.php:3
+msgid "% Responses"
+msgstr ""
+
+#: content-aside.php:7 content-gallery.php:7 content-image.php:7
+#: content-link.php:7 content-video.php:7
+msgid ""
+"[post-format-link] published on [entry-published] [entry-comments-link "
+"before=\" | \"] [entry-edit-link before=\" | \"]"
+msgstr ""
+
+#: content-aside.php:16 content.php:16
+msgid "[entry-terms before=\"Tagged \"]"
+msgstr ""
+
+#: content-aside.php:22 content-audio.php:34 content-chat.php:40
+#: content-link.php:30 content-quote.php:22 content-status.php:27
+#: content-video.php:36
+msgid "Read more &rarr;"
+msgstr ""
+
+#: content-attachment.php:16
+msgid "Published on [entry-published] [entry-edit-link before=\"| \"]"
+msgstr ""
+
+#: content-audio.php:7
+msgid ""
+"[post-format-link] file published on [entry-published] [entry-comments-link "
+"before=\" | \"] [entry-edit-link before=\"| \"]"
+msgstr ""
+
+#: content-audio.php:16 content-chat.php:22 content-gallery.php:16
+#: content-image.php:16 content-link.php:16 content-quote.php:16
+#: content-video.php:16
+msgid ""
+"[entry-terms taxonomy=\"category\" before=\"Posted in \"] [entry-terms "
+"before=\"Tagged \"]"
+msgstr ""
+
+#: content-audio.php:41
+msgid ""
+"[post-format-link] file published on [entry-published] [entry-permalink "
+"before=\"| \"] [entry-comments-link before=\"| \"] [entry-edit-link before="
+"\"| \"]"
+msgstr ""
+
+#: content-chat.php:7 content-quote.php:7
+msgid ""
+"[post-format-link] published on [entry-published] [entry-comments-link "
+"before=\" | \"] [entry-edit-link before=\"| \"]"
+msgstr ""
+
+#: content-chat.php:47 content-gallery.php:40 content-image.php:31
+#: content-link.php:37 content-quote.php:27 content-video.php:43
+msgid ""
+"[post-format-link] published on [entry-published] [entry-permalink before="
+"\"| \"] [entry-comments-link before=\"| \"] [entry-edit-link before=\"| \"]"
+msgstr ""
+
+#: content-gallery.php:35
+#, php-format
+msgid "This gallery contains %d image."
+msgid_plural "This gallery contains %d images."
+msgstr[0] ""
+msgstr[1] ""
+
+#: content-status.php:17
+msgid ""
+"[post-format-link] updated on [entry-published] [entry-edit-link before=\"| "
+"\"]<br />[entry-terms taxonomy=\"category\" before=\"Posted in \"] [entry-"
+"terms before=\"Tagged \"]"
+msgstr ""
+
+#: content-status.php:34
+msgid ""
+"[post-format-link] updated on [entry-published] [entry-permalink before=\"| "
+"\"] [entry-edit-link before=\"| \"]"
+msgstr ""
+
+#: content.php:7 content.php:23
+msgid ""
+"Published by [entry-author] on [entry-published] [entry-comments-link before="
+"\" | \"] [entry-edit-link before=\" | \"]"
+msgstr ""
+
+#: content.php:33
+msgid ""
+"[entry-terms before=\"Posted in \" taxonomy=\"category\"] [entry-terms "
+"before=\"| Tagged \"]"
+msgstr ""
+
+#: footer.php:16
+msgid ""
+"Copyright &copy; [the-year] [site-link]. Powered by [wp-link] and [theme-"
+"link]."
+msgstr ""
+
+#: header.php:36
+msgid "You are here:"
+msgstr ""
+
+#: loop-error.php:4
+msgid "Nothing found"
+msgstr ""
+
+#: loop-error.php:8
+msgid "Apologies, but no entries were found."
+msgstr ""
+
+#: loop-meta.php:54
+#, php-format
+msgid "You are browsing the search results for \"%s\""
+msgstr ""
+
+#: loop-meta.php:71
+msgid "F d, Y"
+msgstr ""
+
+#: loop-meta.php:73 library/extensions/breadcrumb-trail.php:676
+#: library/functions/core-seo.php:90
+msgid "F Y"
+msgstr ""
+
+#: loop-meta.php:75 library/extensions/breadcrumb-trail.php:441
+#: library/extensions/breadcrumb-trail.php:451
+#: library/extensions/breadcrumb-trail.php:460
+#: library/extensions/breadcrumb-trail.php:471
+#: library/extensions/breadcrumb-trail.php:473
+#: library/extensions/breadcrumb-trail.php:672
+#: library/functions/context.php:441 library/functions/context.php:447
+#: library/functions/core-seo.php:94 library/functions/shortcodes.php:70
+msgid "Y"
+msgstr ""
+
+#: loop-meta.php:81
+#, php-format
+msgid "You are browsing the site archives for %s."
+msgstr ""
+
+#: loop-meta.php:86 library/classes/widget-archives.php:44
+#: library/classes/widget-archives.php:142 library/functions/context.php:452
+msgid "Archives"
+msgstr ""
+
+#: loop-meta.php:89
+msgid "You are browsing the site archives."
+msgstr ""
+
+#: loop-nav.php:4
+msgid "<span class=\"meta-nav\">&larr;</span> Return to entry"
+msgstr ""
+
+#: loop-nav.php:10 loop-nav.php:14 loop-nav.php:16
+msgid "<span class=\"meta-nav\">&larr;</span> Previous"
+msgstr ""
+
+#: loop-nav.php:11 loop-nav.php:14 loop-nav.php:16
+msgid "Next <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: menu-primary.php:12 menu-secondary.php:12 menu-subsidiary.php:12
+#: library/classes/widget-nav-menu.php:108
+msgid "Navigation"
+msgstr ""
+
+#: search.php:24
+#, php-format
+msgid "[entry-published] &mdash; <code>%s</code>"
+msgstr ""
+
+#: library/admin/admin.php:37 library/admin/admin.php:38
+#: library/admin/theme-settings.php:172
+msgid "Customize"
+msgstr ""
+
+#: library/admin/meta-box-post-seo.php:39
+msgid "SEO"
+msgstr ""
+
+#: library/admin/meta-box-post-seo.php:72
+msgid "Document Title:"
+msgstr ""
+
+#: library/admin/meta-box-post-seo.php:78
+msgid "Meta Description:"
+msgstr ""
+
+#: library/admin/meta-box-post-seo.php:84
+msgid "Meta Keywords:"
+msgstr ""
+
+#: library/admin/meta-box-post-template.php:38
+msgid "Template"
+msgstr ""
+
+#: library/admin/meta-box-post-template.php:89
+msgid "No templates exist for this post type."
+msgstr ""
+
+#: library/admin/meta-box-theme-about.php:31
+#: library/admin/meta-box-theme-about.php:36
+#, php-format
+msgid "About %s"
+msgstr ""
+
+#: library/admin/meta-box-theme-about.php:61
+msgid "Theme:"
+msgstr ""
+
+#: library/admin/meta-box-theme-about.php:69
+msgid "Version:"
+msgstr ""
+
+#: library/admin/meta-box-theme-about.php:77
+msgid "Author:"
+msgstr ""
+
+#: library/admin/meta-box-theme-about.php:85
+msgid "Description:"
+msgstr ""
+
+#: library/admin/meta-box-theme-footer.php:29
+msgid "Footer settings"
+msgstr ""
+
+#: library/admin/meta-box-theme-footer.php:52
+msgid ""
+"You can add custom <acronym title=\"Hypertext Markup Language\">HTML</"
+"acronym> and/or shortcodes, which will be automatically inserted into your "
+"theme."
+msgstr ""
+
+#: library/admin/theme-settings.php:47 library/admin/theme-settings.php:171
+#, php-format
+msgid "%s Theme Settings"
+msgstr ""
+
+#: library/admin/theme-settings.php:48
+msgid "Theme Settings"
+msgstr ""
+
+#: library/admin/theme-settings.php:198
+msgid "Update Settings"
+msgstr ""
+
+#: library/admin/theme-settings.php:255
+msgid "Documentation"
+msgstr ""
+
+#: library/admin/theme-settings.php:259
+msgid "Support"
+msgstr ""
+
+#: library/classes/widget-archives.php:32
+msgid ""
+"An advanced widget that gives you total control over the output of your "
+"archives."
+msgstr ""
+
+#: library/classes/widget-archives.php:79
+msgid "Select Year"
+msgstr ""
+
+#: library/classes/widget-archives.php:82
+msgid "Select Month"
+msgstr ""
+
+#: library/classes/widget-archives.php:85
+msgid "Select Week"
+msgstr ""
+
+#: library/classes/widget-archives.php:88
+msgid "Select Day"
+msgstr ""
+
+#: library/classes/widget-archives.php:91
+msgid "Select Post"
+msgstr ""
+
+#: library/classes/widget-archives.php:157
+msgid "Alphabetical"
+msgstr ""
+
+#: library/classes/widget-archives.php:158
+msgid "Daily"
+msgstr ""
+
+#: library/classes/widget-archives.php:159
+msgid "Monthly"
+msgstr ""
+
+#: library/classes/widget-archives.php:160
+msgid "Post By Post"
+msgstr ""
+
+#: library/classes/widget-archives.php:161
+msgid "Weekly"
+msgstr ""
+
+#: library/classes/widget-archives.php:162
+msgid "Yearly"
+msgstr ""
+
+#: library/classes/widget-archives.php:167
+#: library/classes/widget-authors.php:141
+#: library/classes/widget-bookmarks.php:182
+#: library/classes/widget-bookmarks.php:194
+#: library/classes/widget-categories.php:171
+#: library/classes/widget-pages.php:152 library/classes/widget-tags.php:186
+msgid "Ascending"
+msgstr ""
+
+#: library/classes/widget-archives.php:168
+#: library/classes/widget-authors.php:142
+#: library/classes/widget-bookmarks.php:183
+#: library/classes/widget-bookmarks.php:195
+#: library/classes/widget-categories.php:172
+#: library/classes/widget-pages.php:153 library/classes/widget-tags.php:187
+msgid "Descending"
+msgstr ""
+
+#: library/classes/widget-archives.php:173
+msgid "Custom"
+msgstr ""
+
+#: library/classes/widget-archives.php:174
+msgid "HTML"
+msgstr ""
+
+#: library/classes/widget-archives.php:175
+msgid "Option"
+msgstr ""
+
+#: library/classes/widget-archives.php:181
+#: library/classes/widget-authors.php:160
+#: library/classes/widget-bookmarks.php:217
+#: library/classes/widget-calendar.php:108
+#: library/classes/widget-categories.php:195
+#: library/classes/widget-nav-menu.php:131
+#: library/classes/widget-pages.php:178 library/classes/widget-search.php:144
+#: library/classes/widget-tags.php:207
+msgid "Title:"
+msgstr ""
+
+#: library/classes/widget-archives.php:225
+#: library/classes/widget-authors.php:208
+msgid "Show post count?"
+msgstr ""
+
+#: library/classes/widget-authors.php:32
+msgid ""
+"An advanced widget that gives you total control over the output of your "
+"author lists."
+msgstr ""
+
+#: library/classes/widget-authors.php:44
+#: library/classes/widget-authors.php:123
+msgid "Authors"
+msgstr ""
+
+#: library/classes/widget-authors.php:146
+msgid "Display Name"
+msgstr ""
+
+#: library/classes/widget-authors.php:147 library/functions/comments.php:188
+msgid "Email"
+msgstr ""
+
+#: library/classes/widget-authors.php:148
+#: library/classes/widget-bookmarks.php:188
+#: library/classes/widget-bookmarks.php:199
+#: library/classes/widget-categories.php:177
+#: library/classes/widget-pages.php:159
+msgid "ID"
+msgstr ""
+
+#: library/classes/widget-authors.php:149
+msgid "Nice Name"
+msgstr ""
+
+#: library/classes/widget-authors.php:150
+msgid "Post Count"
+msgstr ""
+
+#: library/classes/widget-authors.php:151
+msgid "Registered"
+msgstr ""
+
+#: library/classes/widget-authors.php:152
+#: library/classes/widget-bookmarks.php:211
+msgid "URL"
+msgstr ""
+
+#: library/classes/widget-authors.php:153
+msgid "Login"
+msgstr ""
+
+#: library/classes/widget-authors.php:186
+#: library/classes/widget-categories.php:166
+#: library/classes/widget-tags.php:182
+msgid "List"
+msgstr ""
+
+#: library/classes/widget-authors.php:186
+#: library/classes/widget-categories.php:167
+msgid "None"
+msgstr ""
+
+#: library/classes/widget-authors.php:204
+msgid "<acronym title=\"Hypertext Markup Language\">HTML</acronym>?"
+msgstr ""
+
+#: library/classes/widget-authors.php:212
+msgid "Exclude admin?"
+msgstr ""
+
+#: library/classes/widget-authors.php:216
+msgid "Show full name?"
+msgstr ""
+
+#: library/classes/widget-authors.php:220
+#: library/classes/widget-categories.php:298
+#: library/classes/widget-tags.php:318
+msgid "Hide empty?"
+msgstr ""
+
+#: library/classes/widget-bookmarks.php:32
+msgid ""
+"An advanced widget that gives you total control over the output of your "
+"bookmarks (links)."
+msgstr ""
+
+#: library/classes/widget-bookmarks.php:44
+#: library/classes/widget-bookmarks.php:86
+#: library/classes/widget-bookmarks.php:150
+msgid "Bookmarks"
+msgstr ""
+
+#: library/classes/widget-bookmarks.php:187
+#: library/classes/widget-categories.php:176
+#: library/classes/widget-tags.php:192
+msgid "Count"
+msgstr ""
+
+#: library/classes/widget-bookmarks.php:189
+#: library/classes/widget-bookmarks.php:202
+#: library/classes/widget-categories.php:178
+#: library/classes/widget-tags.php:193 library/functions/comments.php:187
+msgid "Name"
+msgstr ""
+
+#: library/classes/widget-bookmarks.php:190
+#: library/classes/widget-categories.php:179
+#: library/classes/widget-pages.php:162
+msgid "Slug"
+msgstr ""
+
+#: library/classes/widget-bookmarks.php:200
+msgid "Description"
+msgstr ""
+
+#: library/classes/widget-bookmarks.php:201
+msgid "Length"
+msgstr ""
+
+#: library/classes/widget-bookmarks.php:203
+msgid "Notes"
+msgstr ""
+
+#: library/classes/widget-bookmarks.php:204
+msgid "Owner"
+msgstr ""
+
+#: library/classes/widget-bookmarks.php:205
+#: library/classes/widget-tags.php:188
+msgid "Random"
+msgstr ""
+
+#: library/classes/widget-bookmarks.php:206
+msgid "Rating"
+msgstr ""
+
+#: library/classes/widget-bookmarks.php:207
+msgid "Rel"
+msgstr ""
+
+#: library/classes/widget-bookmarks.php:208
+#: library/classes/widget-categories.php:187
+msgid "RSS"
+msgstr ""
+
+#: library/classes/widget-bookmarks.php:209
+msgid "Target"
+msgstr ""
+
+#: library/classes/widget-bookmarks.php:210
+msgid "Updated"
+msgstr ""
+
+#: library/classes/widget-bookmarks.php:319
+msgid "Categorize?"
+msgstr ""
+
+#: library/classes/widget-bookmarks.php:323
+msgid "Show description?"
+msgstr ""
+
+#: library/classes/widget-bookmarks.php:327
+msgid "Hide invisible?"
+msgstr ""
+
+#: library/classes/widget-bookmarks.php:331
+msgid "Show rating?"
+msgstr ""
+
+#: library/classes/widget-bookmarks.php:335
+msgid "Show updated?"
+msgstr ""
+
+#: library/classes/widget-bookmarks.php:339
+msgid "Show images?"
+msgstr ""
+
+#: library/classes/widget-bookmarks.php:343
+msgid "Show name?"
+msgstr ""
+
+#: library/classes/widget-bookmarks.php:347
+msgid "Show private?"
+msgstr ""
+
+#: library/classes/widget-calendar.php:32
+msgid ""
+"An advanced widget that gives you total control over the output of your "
+"calendar."
+msgstr ""
+
+#: library/classes/widget-calendar.php:44
+#: library/classes/widget-calendar.php:99
+msgid "Calendar"
+msgstr ""
+
+#: library/classes/widget-calendar.php:113
+msgid "One-letter abbreviation?"
+msgstr ""
+
+#: library/classes/widget-categories.php:32
+msgid ""
+"An advanced widget that gives you total control over the output of your "
+"category links."
+msgstr ""
+
+#: library/classes/widget-categories.php:44
+#: library/classes/widget-categories.php:136
+msgid "Categories"
+msgstr ""
+
+#: library/classes/widget-categories.php:180
+msgid "Term Group"
+msgstr ""
+
+#: library/classes/widget-categories.php:185
+msgid "Atom"
+msgstr ""
+
+#: library/classes/widget-categories.php:186
+msgid "RDF"
+msgstr ""
+
+#: library/classes/widget-categories.php:188
+msgid "RSS 2.0"
+msgstr ""
+
+#: library/classes/widget-categories.php:286
+#: library/classes/widget-pages.php:277
+msgid "Hierarchical?"
+msgstr ""
+
+#: library/classes/widget-categories.php:290
+msgid "Use description?"
+msgstr ""
+
+#: library/classes/widget-categories.php:294
+msgid "Show count?"
+msgstr ""
+
+#: library/classes/widget-nav-menu.php:32
+msgid ""
+"An advanced widget that gives you total control over the output of your "
+"menus."
+msgstr ""
+
+#: library/classes/widget-nav-menu.php:44
+msgid "Navigation Menu"
+msgstr ""
+
+#: library/classes/widget-pages.php:32
+msgid ""
+"An advanced widget that gives you total control over the output of your page "
+"links."
+msgstr ""
+
+#: library/classes/widget-pages.php:44 library/classes/widget-pages.php:125
+msgid "Pages"
+msgstr ""
+
+#: library/classes/widget-pages.php:157
+msgid "Author"
+msgstr ""
+
+#: library/classes/widget-pages.php:158
+msgid "Date"
+msgstr ""
+
+#: library/classes/widget-pages.php:160
+msgid "Menu Order"
+msgstr ""
+
+#: library/classes/widget-pages.php:161 library/classes/widget-pages.php:169
+msgid "Modified"
+msgstr ""
+
+#: library/classes/widget-pages.php:163
+msgid "Title"
+msgstr ""
+
+#: library/classes/widget-pages.php:168
+msgid "Created"
+msgstr ""
+
+#: library/classes/widget-search.php:33
+msgid ""
+"An advanced widget that gives you total control over the output of your "
+"search form."
+msgstr ""
+
+#: library/classes/widget-search.php:45 library/classes/widget-search.php:132
+msgid "Search"
+msgstr ""
+
+#: library/classes/widget-search.php:148
+msgid "Search Label:"
+msgstr ""
+
+#: library/classes/widget-search.php:152
+msgid "Search Text:"
+msgstr ""
+
+#: library/classes/widget-search.php:159
+msgid "Search Submit:"
+msgstr ""
+
+#: library/classes/widget-search.php:164
+msgid "Use theme's <code>searchform.php</code>?"
+msgstr ""
+
+#: library/classes/widget-tags.php:32
+msgid ""
+"An advanced widget that gives you total control over the output of your tags."
+msgstr ""
+
+#: library/classes/widget-tags.php:44 library/classes/widget-tags.php:146
+msgid "Tags"
+msgstr ""
+
+#: library/classes/widget-tags.php:176
+msgid "View"
+msgstr ""
+
+#: library/classes/widget-tags.php:177
+#: library/extensions/breadcrumb-trail.php:540
+#: library/extensions/breadcrumb-trail.php:573
+#: library/extensions/breadcrumb-trail.php:588
+#: library/extensions/breadcrumb-trail.php:616
+#: library/functions/shortcodes.php:204 library/functions/shortcodes.php:448
+msgid "Edit"
+msgstr ""
+
+#: library/classes/widget-tags.php:181
+msgid "Flat"
+msgstr ""
+
+#: library/classes/widget-tags.php:314
+msgid "Pad counts?"
+msgstr ""
+
+#: library/extensions/breadcrumb-trail.php:44
+msgid "Browse:"
+msgstr ""
+
+#: library/extensions/breadcrumb-trail.php:47
+msgid "Home"
+msgstr ""
+
+#: library/extensions/breadcrumb-trail.php:424
+#: library/functions/context.php:429
+msgid "g:i a"
+msgstr ""
+
+#: library/extensions/breadcrumb-trail.php:427
+#, php-format
+msgid "Minute %1$s"
+msgstr ""
+
+#: library/extensions/breadcrumb-trail.php:427
+#: library/functions/context.php:432
+msgid "i"
+msgstr ""
+
+#: library/extensions/breadcrumb-trail.php:430
+#: library/functions/context.php:435
+msgid "g a"
+msgstr ""
+
+#: library/extensions/breadcrumb-trail.php:442
+#: library/extensions/breadcrumb-trail.php:463
+#: library/extensions/breadcrumb-trail.php:465
+#: library/extensions/breadcrumb-trail.php:676
+msgid "F"
+msgstr ""
+
+#: library/extensions/breadcrumb-trail.php:445
+#: library/extensions/breadcrumb-trail.php:447
+#: library/extensions/breadcrumb-trail.php:680
+msgid "d"
+msgstr ""
+
+#: library/extensions/breadcrumb-trail.php:454
+#: library/extensions/breadcrumb-trail.php:456
+#, php-format
+msgid "Week %1$s"
+msgstr ""
+
+#: library/extensions/breadcrumb-trail.php:454
+#: library/extensions/breadcrumb-trail.php:456
+#: library/functions/context.php:441
+msgid "W"
+msgstr ""
+
+#: library/extensions/breadcrumb-trail.php:482
+#: library/extensions/breadcrumb-trail.php:484
+#: library/functions/context.php:458
+#, php-format
+msgid "Search results for &quot;%1$s&quot;"
+msgstr ""
+
+#: library/extensions/breadcrumb-trail.php:489
+#: library/functions/context.php:462
+msgid "404 Not Found"
+msgstr ""
+
+#: library/extensions/breadcrumb-trail.php:494
+#: library/extensions/breadcrumb-trail.php:496
+#, php-format
+msgid "Page %d"
+msgstr ""
+
+#: library/extensions/breadcrumb-trail.php:565
+msgid "Split"
+msgstr ""
+
+#: library/extensions/breadcrumb-trail.php:569
+msgid "Merge"
+msgstr ""
+
+#: library/extensions/breadcrumb-trail.php:680
+msgid "F j, Y"
+msgstr ""
+
+#: library/extensions/custom-field-series.php:86
+msgid "Articles in this series"
+msgstr ""
+
+#: library/extensions/custom-field-series.php:212
+msgid "Series"
+msgstr ""
+
+#: library/extensions/post-format-tools.php:96
+msgid "Asides"
+msgstr ""
+
+#: library/extensions/post-format-tools.php:97
+msgid "Audio"
+msgstr ""
+
+#: library/extensions/post-format-tools.php:98
+msgid "Chats"
+msgstr ""
+
+#: library/extensions/post-format-tools.php:99
+msgid "Images"
+msgstr ""
+
+#: library/extensions/post-format-tools.php:100
+msgid "Galleries"
+msgstr ""
+
+#: library/extensions/post-format-tools.php:101
+msgid "Links"
+msgstr ""
+
+#: library/extensions/post-format-tools.php:102
+msgid "Quotes"
+msgstr ""
+
+#: library/extensions/post-format-tools.php:103
+msgid "Status Updates"
+msgstr ""
+
+#: library/extensions/post-format-tools.php:104
+msgid "Videos"
+msgstr ""
+
+#: library/extensions/post-stylesheets.php:279
+msgid "Stylesheet"
+msgstr ""
+
+#: library/extensions/theme-layouts.php:337
+msgid "Default"
+msgstr ""
+
+#: library/extensions/theme-layouts.php:338
+msgid "One Column"
+msgstr ""
+
+#: library/extensions/theme-layouts.php:339
+msgid "Two Columns, Left"
+msgstr ""
+
+#: library/extensions/theme-layouts.php:340
+msgid "Two Columns, Right"
+msgstr ""
+
+#: library/extensions/theme-layouts.php:341
+msgid "Three Columns, Left"
+msgstr ""
+
+#: library/extensions/theme-layouts.php:342
+msgid "Three Columns, Right"
+msgstr ""
+
+#: library/extensions/theme-layouts.php:343
+msgid "Three Columns, Center"
+msgstr ""
+
+#: library/extensions/theme-layouts.php:421
+#: library/extensions/theme-layouts.php:531
+#: library/extensions/theme-layouts.php:616
+msgid "Layout"
+msgstr ""
+
+#: library/extensions/theme-layouts.php:447
+msgid "Layout is a theme-specific structure for the single view of the post."
+msgstr ""
+
+#: library/extensions/theme-layouts.php:649
+msgid "Global Layout"
+msgstr ""
+
+#: library/functions/comments.php:182
+msgid "*"
+msgstr ""
+
+#: library/functions/comments.php:189
+msgid "Website"
+msgstr ""
+
+#: library/functions/comments.php:195
+msgid "Comment"
+msgstr ""
+
+#: library/functions/comments.php:196
+#, php-format
+msgid ""
+"You must be <a href=\"%1$s\" title=\"Log in\">logged in</a> to post a "
+"comment."
+msgstr ""
+
+#: library/functions/comments.php:197
+#, php-format
+msgid "Logged in as <a href=\"%1$s\" title=\"%2$s\">%2$s</a>."
+msgstr ""
+
+#: library/functions/comments.php:197
+msgid "Log out of this account"
+msgstr ""
+
+#: library/functions/comments.php:197
+msgid "Log out &raquo;"
+msgstr ""
+
+#: library/functions/comments.php:202
+msgid "Leave a Reply"
+msgstr ""
+
+#: library/functions/comments.php:203
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: library/functions/comments.php:204
+msgid "Click here to cancel reply."
+msgstr ""
+
+#: library/functions/comments.php:205
+msgid "Post Comment"
+msgstr ""
+
+#: library/functions/context.php:429 library/functions/context.php:435
+#: library/functions/context.php:438 library/functions/context.php:444
+#: library/functions/context.php:447
+#, php-format
+msgid "Archive for %1$s"
+msgstr ""
+
+#: library/functions/context.php:432
+#, php-format
+msgid "Archive for minute %1$s"
+msgstr ""
+
+#: library/functions/context.php:438
+msgid "F jS, Y"
+msgstr ""
+
+#: library/functions/context.php:441
+#, php-format
+msgid "Archive for week %1$s of %2$s"
+msgstr ""
+
+#: library/functions/context.php:466
+#, php-format
+msgid "%1$s Page %2$s"
+msgstr ""
+
+#: library/functions/core-seo.php:97
+#, php-format
+msgid "Copyright (c) %1$s"
+msgstr ""
+
+#: library/functions/core-seo.php:116 library/functions/shortcodes.php:218
+#: library/functions/shortcodes.php:378
+msgid "l, F jS, Y, g:i a"
+msgstr ""
+
+#: library/functions/customize.php:63 library/functions/customize.php:88
+msgid "Footer"
+msgstr ""
+
+#: library/functions/deprecated.php:587
+#, php-format
+msgid ""
+"<code>%1$s</code> &mdash; This function has been removed or replaced by "
+"another function."
+msgstr ""
+
+#: library/functions/menus.php:38
+msgctxt "nav menu location"
+msgid "Primary"
+msgstr ""
+
+#: library/functions/menus.php:42
+msgctxt "nav menu location"
+msgid "Secondary"
+msgstr ""
+
+#: library/functions/menus.php:46
+msgctxt "nav menu location"
+msgid "Subsidiary"
+msgstr ""
+
+#: library/functions/settings.php:76 library/functions/settings.php:80
+msgid "Copyright &#169; [the-year] [site-link]."
+msgstr ""
+
+#: library/functions/settings.php:76
+msgid "Powered by [wp-link], [theme-link], and [child-link]."
+msgstr ""
+
+#: library/functions/settings.php:80
+msgid "Powered by [wp-link] and [theme-link]."
+msgstr ""
+
+#: library/functions/shortcodes.php:93
+msgid "State-of-the-art semantic personal publishing platform"
+msgstr ""
+
+#: library/functions/shortcodes.php:93
+msgid "WordPress"
+msgstr ""
+
+#: library/functions/shortcodes.php:106
+#, php-format
+msgid "%s WordPress Theme"
+msgstr ""
+
+#: library/functions/shortcodes.php:134
+msgid "Log out"
+msgstr ""
+
+#: library/functions/shortcodes.php:136
+msgid "Log in"
+msgstr ""
+
+#: library/functions/shortcodes.php:151
+#, php-format
+msgid "This page loaded in %1$s seconds with %2$s database queries."
+msgstr ""
+
+#: library/functions/shortcodes.php:204 library/functions/shortcodes.php:448
+#, php-format
+msgid "Edit %1$s"
+msgstr ""
+
+#: library/functions/shortcodes.php:234
+msgid "Leave a response"
+msgstr ""
+
+#: library/functions/shortcodes.php:234
+#, php-format
+msgid "%1$s Response"
+msgstr ""
+
+#: library/functions/shortcodes.php:234
+#, php-format
+msgid "%1$s Responses"
+msgstr ""
+
+#: library/functions/shortcodes.php:241 library/functions/shortcodes.php:243
+#: library/functions/shortcodes.php:245
+#, php-format
+msgid "Comment on %1$s"
+msgstr ""
+
+#: library/functions/shortcodes.php:310
+msgid "(Untitled)"
+msgstr ""
+
+#: library/functions/shortcodes.php:326
+msgid "Shortlink"
+msgstr ""
+
+#: library/functions/shortcodes.php:350 library/functions/shortcodes.php:427
+msgid "Permalink"
+msgstr ""
+
+#: library/functions/shortcodes.php:378
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: library/functions/shortcodes.php:427
+#, php-format
+msgid "Permalink to comment %1$s"
+msgstr ""
+
+#: library/functions/shortcodes.php:467
+msgid "Reply"
+msgstr ""
+
+#: library/functions/shortcodes.php:468
+msgid "Log in to reply."
+msgstr ""
+
+#: library/functions/sidebars.php:87
+msgctxt "sidebar"
+msgid "Primary"
+msgstr ""
+
+#: library/functions/sidebars.php:88
+msgid "The main (primary) widget area, most often used as a sidebar."
+msgstr ""
+
+#: library/functions/sidebars.php:91
+msgctxt "sidebar"
+msgid "Secondary"
+msgstr ""
+
+#: library/functions/sidebars.php:92
+msgid ""
+"The second most important widget area, most often used as a secondary "
+"sidebar."
+msgstr ""
+
+#: library/functions/sidebars.php:95
+msgctxt "sidebar"
+msgid "Subsidiary"
+msgstr ""
+
+#: library/functions/sidebars.php:96
+msgid "A widget area loaded in the footer of the site."
+msgstr ""
+
+#: library/functions/sidebars.php:99
+msgctxt "sidebar"
+msgid "Header"
+msgstr ""
+
+#: library/functions/sidebars.php:100
+msgid "Displayed within the site's header area."
+msgstr ""
+
+#: library/functions/sidebars.php:103
+msgctxt "sidebar"
+msgid "Before Content"
+msgstr ""
+
+#: library/functions/sidebars.php:104
+msgid "Loaded before the page's main content area."
+msgstr ""
+
+#: library/functions/sidebars.php:107
+msgctxt "sidebar"
+msgid "After Content"
+msgstr ""
+
+#: library/functions/sidebars.php:108
+msgid "Loaded after the page's main content area."
+msgstr ""
+
+#: library/functions/sidebars.php:111
+msgctxt "sidebar"
+msgid "After Singular"
+msgstr ""
+
+#: library/functions/sidebars.php:112
+msgid ""
+"Loaded on singular post (page, attachment, etc.) views before the comments "
+"area."
+msgstr ""
