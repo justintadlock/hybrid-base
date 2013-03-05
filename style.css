@@ -2,7 +2,7 @@
  * Theme Name: Hybrid Base
  * Theme URI: http://justintadlock.com
  * Description: A description of your theme.
- * Tags: theme-options
+ * Tags: example
  * Version: 0.1.0-beta
  * Author: Justin Tadlock
  * Author URI: http://justintadlock.com
@@ -16,9 +16,9 @@
  * Defaults
  * --------------------------------------------------------------------------- */
 
-html {
-	font-size: 16px;
-}
+/* === HTML === */
+
+html {}
 
 /* === Body === */
 
@@ -48,6 +48,8 @@ h6 {}
 /* === Blockquotes, quotes, and cites === */
 
 blockquote {}
+
+	blockquote blockquote {}
 
 	blockquote cite {}
 
