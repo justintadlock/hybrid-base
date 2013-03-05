@@ -132,6 +132,7 @@ function hybrid_base_theme_setup() {
 	/** Hybrid Core 1.6 changes **/
 	add_filter( "{$prefix}_sidebar_defaults", 'hybrid_base_sidebar_defaults' );
 	add_filter( 'cleaner_gallery_defaults',   'hybrid_base_gallery_defaults' );
+	add_filter( 'the_content', 'hybrid_base_aside_infinity', 9 );
 	/****************************/
 }
 
@@ -204,6 +205,23 @@ function hybrid_base_theme_setup() {
 		$defaults['captiontag'] = 'figcaption';
 
 		return $defaults;
+	}
+
+	/**
+	 * Adds an infinity character "&#8734;" to the end of the post content on 'aside' posts.  This 
+	 * is from version 0.1.1 of the Post Format Tools extension.
+	 *
+	 * @since  0.1.0
+	 * @access public
+	 * @param  string $content The post content.
+	 * @return string $content
+	 */
+	function hybrid_base_aside_infinity( $content ) {
+
+		if ( has_post_format( 'aside' ) && !is_singular() )
+			$content .= ' <a class="permalink" href="' . get_permalink() . '" title="' . the_title_attribute( array( 'echo' => false ) ) . '">&#8734;</a>';
+
+		return $content;
 	}
 
 /* End Hybrid Core 1.6 section. */
