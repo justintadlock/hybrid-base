@@ -21,7 +21,7 @@
 		<?php if ( get_the_title() ) { ?>
 
 			<header class="entry-header">
-				<?php the_title( '<h2 class="entry-title"><a href="' . esc_url( post_format_tools_url_grabber() ) . '" title="' . the_title_attribute( array( 'echo' => false ) ) . '">', '<span class="meta-nav">&rarr;</span></a></h2>' ); ?>
+				<?php the_title( '<h2 class="entry-title"><a href="' . esc_url( post_format_tools_url_grabber() ) . '" title="' . the_title_attribute( array( 'echo' => false ) ) . '">', ' <span class="meta-nav">&rarr;</span></a></h2>' ); ?>
 			</header><!-- .entry-header -->
 
 		<?php } else { ?>
