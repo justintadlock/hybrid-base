@@ -12,7 +12,7 @@
 
 </head>
 
-<body class="<?php hybrid_body_class(); ?>">
+<body <?php hybrid_body_attributes(); ?>>
 
 	<div id="container">
 
