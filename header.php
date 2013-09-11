@@ -33,4 +33,4 @@
 
 		<div id="main">
 
-			<?php if ( current_theme_supports( 'breadcrumb-trail' ) ) breadcrumb_trail( array( 'container' => 'nav', 'separator' => '>', 'before' => __( 'You are here:', 'hybrid-base' ) ) ); ?>
+			<?php get_template_part( 'breadcrumbs' ); // Loads the breadcrumbs.php template. ?>
