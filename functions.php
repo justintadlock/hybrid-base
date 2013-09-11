@@ -81,6 +81,9 @@ function hybrid_base_theme_setup() {
 	/* Enable custom template hierarchy. */
 	add_theme_support( 'hybrid-core-template-hierarchy' );
 
+	/* Load the media grabber. */
+	add_theme_support( 'hybrid-core-media-grabber' );
+
 	/* Enable theme layouts (need to add stylesheet support). */
 	add_theme_support( 
 		'theme-layouts', 

@@ -22,13 +22,15 @@
 			<?php the_title( '<h2 class="entry-title"><a href="' . get_permalink() . '">', '</a></h2>' ); ?>
 		</header><!-- .entry-header -->
 
+		<?php echo ( $audio = hybrid_media_grabber( array( 'type' => 'audio' ) ) ); ?>
+
 		<?php if ( has_excerpt() ) { ?>
 
 			<div class="entry-summary">
 				<?php the_excerpt(); ?>
 			</div><!-- .entry-summary -->
 
-		<?php } else { ?>
+		<?php } elseif ( empty( $audio ) ) { ?>
 
 			<div class="entry-content">
 				<?php the_content( __( 'Read more &rarr;', 'hybrid-base' ) ); ?>
