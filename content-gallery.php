@@ -31,8 +31,8 @@
 				wp_link_pages( array( 'before' => '<p class="page-links">' . '<span class="before">' . __( 'Pages:', 'hybrid-base' ) . '</span>', 'after' => '</p>' ) );
 			} ?>
 
-			<?php $count = post_format_tools_get_image_attachment_count(); ?>
-			<p class="image-count"><?php printf( _n( 'This gallery contains %d image.', 'This gallery contains %d images.', $count, 'hybrid-base' ), $count ); ?></p>
+			<?php $count = hybrid_get_gallery_item_count(); ?>
+			<p class="image-count"><?php printf( _n( 'This gallery contains %d item.', 'This gallery contains %d items.', $count, 'hybrid-base' ), $count ); ?></p>
 
 		</div><!-- .entry-summary -->
 
