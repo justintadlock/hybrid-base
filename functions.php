@@ -20,7 +20,7 @@
  *
  * @package    HybridBase
  * @subpackage Functions
- * @version    0.1.0
+ * @version    0.2.0
  * @since      0.1.0
  * @author     Justin Tadlock <justin@justintadlock.com>
  * @copyright  Copyright (c) 2013, Justin Tadlock
