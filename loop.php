@@ -4,7 +4,7 @@
 
 		<?php the_post(); // Loads the post data. ?>
 
-		<?php hybrid_base_get_template(); // Loads the content template. ?>
+		<?php hybrid_get_content_template(); // Loads the content template. ?>
 
 		<?php if ( is_singular() ) { ?>
 
