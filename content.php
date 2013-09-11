@@ -1,4 +1,4 @@
-<article id="post-<?php the_ID(); ?>" class="<?php hybrid_entry_class(); ?>">
+<article <?php hybrid_post_attributes(); ?>>
 
 	<?php if ( is_singular( get_post_type() ) ) { ?>
 
