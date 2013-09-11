@@ -1,6 +1,6 @@
 <?php
 /* If viewing a singular page, return. */
-if ( is_singular() )
+if ( is_singular() || is_front_page() || is_404() )
 	return;
 ?>
 
