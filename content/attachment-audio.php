@@ -1,13 +1,14 @@
-<article <?php hybrid_attr( 'post' ); ?>>
+<?php if ( is_attachment() ) : // If viewing a single attachment. ?>
 
-	<?php if ( is_attachment() ) : // If viewing a single attachment. ?>
+	<article <?php hybrid_attr( 'post' ); ?>>
+
+		<?php hybrid_attachment(); // Function for handling non-image attachments. ?>
 
 		<header class="entry-header">
 			<h1 <?php hybrid_attr( 'entry-title' ); ?>><?php single_post_title(); ?></h1>
 		</header><!-- .entry-header -->
 
 		<div class="entry-content">
-			<?php hybrid_attachment(); // Function for handling non-image attachments. ?>
 			<?php the_content(); ?>
 			<?php wp_link_pages(); ?>
 		</div><!-- .entry-content -->
@@ -17,9 +18,25 @@
 			<?php edit_post_link(); ?>
 		</footer><!-- .entry-footer -->
 
-	<?php else : // If not viewing a single attachment. ?>
+	</article><!-- .entry -->
 
-		<?php get_the_image(); ?>
+	<div class="attachment-meta">
+
+		<div class="media-info">
+
+			<h3><?php _e( 'Audio Info', 'hybrid-base' ); ?></h3>
+
+			<?php hybrid_media_meta(); ?>
+
+		</div><!-- .media-info -->
+
+	</div><!-- .attachment-meta -->
+
+<?php else : // If not viewing a single attachment. ?>
+
+	<article <?php hybrid_attr( 'post' ); ?>>
+
+		<?php get_the_image( array( 'size' => 'full', 'order' => array( 'featured', 'attachment' ) ) ); ?>
 
 		<header class="entry-header">
 			<?php the_title( '<h2 ' . hybrid_get_attr( 'entry-title' ) . '><a href="' . get_permalink() . '" rel="bookmark" itemprop="url">', '</a></h2>' ); ?>
@@ -29,6 +46,6 @@
 			<?php the_excerpt(); ?>
 		</div><!-- .entry-summary -->
 
-	<?php endif; // End single attachment check. ?>
+	</article><!-- .entry -->
 
-</article><!-- .entry -->
+<?php endif; // End single attachment check. ?>

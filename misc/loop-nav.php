@@ -1,22 +1,17 @@
-	<?php if ( is_attachment() ) : ?>
+<?php if ( is_singular( 'post' ) ) : // If viewing a single post page. ?>
 
-		<div class="loop-nav">
-			<?php previous_post_link( '%link', '<span class="previous">' . __( '<span class="meta-nav">&larr;</span> Return to entry', 'hybrid-base' ) . '</span>' ); ?>
-		</div><!-- .loop-nav -->
+	<div class="loop-nav">
+		<?php previous_post_link( '<div class="prev">' . __( 'Previous Post: %link', 'hybrid-base' ) . '</div>', '%title' ); ?>
+		<?php next_post_link(     '<div class="next">' . __( 'Next Post: %link',     'hybrid-base' ) . '</div>', '%title' ); ?>
+	</div><!-- .loop-nav -->
 
-	<?php elseif ( is_singular( 'post' ) ) : ?>
+<?php elseif ( is_home() || is_archive() || is_search() ) : // If viewing the blog, an archive, or search results. ?>
 
-		<div class="loop-nav">
-			<?php previous_post_link( '%link', '<span class="previous">' . __( '<span class="meta-nav">&larr;</span> Previous', 'hybrid-base' ) . '</span>' ); ?>
-			<?php next_post_link( '%link', '<span class="next">' . __( 'Next <span class="meta-nav">&rarr;</span>', 'hybrid-base' ) . '</span>' ); ?>
-		</div><!-- .loop-nav -->
+	<?php loop_pagination(
+		array( 
+			'prev_text' => _x( '&larr; Previous', 'posts navigation', 'hybrid-base' ), 
+			'next_text' => _x( 'Next &rarr;',     'posts navigation', 'hybrid-base' )
+		) 
+	); ?>
 
-	<?php elseif ( !is_singular() && current_theme_supports( 'loop-pagination' ) ) : loop_pagination( array( 'prev_text' => __( '<span class="meta-nav">&larr;</span> Previous', 'hybrid-base' ), 'next_text' => __( 'Next <span class="meta-nav">&rarr;</span>', 'hybrid-base' ) ) ); ?>
-
-	<?php elseif ( !is_singular() && $nav = get_posts_nav_link( array( 'sep' => '', 'prelabel' => '<span class="previous">' . __( '<span class="meta-nav">&larr;</span> Previous', 'hybrid-base' ) . '</span>', 'nxtlabel' => '<span class="next">' . __( 'Next <span class="meta-nav">&rarr;</span>', 'hybrid-base' ) . '</span>' ) ) ) : ?>
-
-		<div class="loop-nav">
-			<?php echo $nav; ?>
-		</div><!-- .loop-nav -->
-
-	<?php endif; ?>
+<?php endif; // End check for type of page being viewed. ?>

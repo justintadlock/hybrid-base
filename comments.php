@@ -4,22 +4,32 @@ if ( post_password_required() || ( !have_comments() && !comments_open() && !ping
 	return;
 ?>
 
-<section id="comments">
+<section id="comments-template">
 
-	<?php if ( have_comments() ) { ?>
+	<?php if ( have_comments() ) : // Check if there are any comments. ?>
 
-		<h2 id="comments-number"><?php comments_number( '', __( 'One Response', 'hybrid-base' ), __( '% Responses', 'hybrid-base' ) ); ?></h2>
+		<div id="comments">
 
-		<?php get_template_part( 'comments-loop-nav' ); // Loads the comment-loop-nav.php template. ?>
+			<h3 id="comments-number"><?php comments_number(); ?></h3>
 
-		<ol class="comment-list">
-			<?php wp_list_comments( hybrid_list_comments_args() ); ?>
-		</ol><!-- .comment-list -->
+			<ol class="comment-list">
+				<?php wp_list_comments(
+					array(
+						'style'        => 'ol',
+						'callback'     => 'hybrid_comments_callback',
+						'end-callback' => 'hybrid_comments_end_callback'
+					)
+				); ?>
+			</ol><!-- .comment-list -->
 
-	<?php } // End check for comments. ?>
+			<?php locate_template( array( 'misc/comments-nav.php' ), true ); // Loads the misc/comments-nav.php template. ?>
 
-	<?php get_template_part( 'comments-loop-error' ); // Loads the comments-loop-error.php template. ?>
+		</div><!-- #comments-->
+
+	<?php endif; // End check for comments. ?>
+
+	<?php locate_template( array( 'misc/comments-error.php' ), true ); // Loads the misc/comments-error.php template. ?>
 
 	<?php comment_form(); // Loads the comment form. ?>
 
-</section><!-- #comments -->
+</section><!-- #comments-template -->

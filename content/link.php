@@ -1,42 +1,45 @@
-<article <?php hybrid_post_attributes(); ?>>
+<article <?php hybrid_attr( 'post' ); ?>>
 
-	<?php if ( is_singular( get_post_type() ) ) { ?>
+	<?php if ( is_singular( get_post_type() ) ) : // If viewing a single post. ?>
 
 		<header class="entry-header">
-			<h1 class="entry-title"><?php single_post_title(); ?></h1>
-			<?php echo apply_atomic_shortcode( 'entry_byline', '<div class="entry-byline">' . __( '[post-format-link] published on [entry-published] [entry-comments-link before=" | "] [entry-edit-link before=" | "]', 'hybrid-base' ) . '</div>' ); ?>
+
+			<h1 <?php hybrid_attr( 'entry-title' ); ?>><?php single_post_title(); ?></h1>
+
+			<div class="entry-byline">
+				<?php hybrid_post_format_link(); ?>
+				<span <?php hybrid_attr( 'entry-author' ); ?>><?php the_author_posts_link(); ?></span>
+				<time <?php hybrid_attr( 'entry-published' ); ?>><?php echo get_the_date(); ?></time>
+				<?php comments_popup_link( number_format_i18n( 0 ), number_format_i18n( 1 ), '%', 'comments-link', '' ); ?>
+				<?php edit_post_link(); ?>
+			</div><!-- .entry-byline -->
+
 		</header><!-- .entry-header -->
 
-		<div class="entry-content">
+		<div <?php hybrid_attr( 'entry-content' ); ?>>
 			<?php the_content(); ?>
-			<?php wp_link_pages( array( 'before' => '<p class="page-links">' . '<span class="before">' . __( 'Pages:', 'hybrid-base' ) . '</span>', 'after' => '</p>' ) ); ?>
+			<?php wp_link_pages(); ?>
 		</div><!-- .entry-content -->
 
 		<footer class="entry-footer">
-			<?php echo apply_atomic_shortcode( 'entry_meta', '<div class="entry-meta">' . __( '[entry-terms taxonomy="category" before="Posted in "] [entry-terms before="Tagged "]', 'hybrid-base' ) . '</div>' ); ?>
+			<?php hybrid_post_terms( array( 'taxonomy' => 'category', 'text' => __( 'Posted in %s', 'hybrid-base' ) ) ); ?>
+			<?php hybrid_post_terms( array( 'taxonomy' => 'post_tag', 'text' => __( 'Tagged %s', 'hybrid-base' ), 'before' => '<br />' ) ); ?>
 		</footer><!-- .entry-footer -->
 
-	<?php } else { ?>
+	<?php else : // If not viewing a single post. ?>
 
-		<?php if ( get_the_title() ) { ?>
-
-			<header class="entry-header">
-				<?php the_title( '<h2 class="entry-title"><a href="' . hybrid_get_the_post_format_url() . '" title="' . the_title_attribute( array( 'echo' => false ) ) . '">', ' <span class="meta-nav">&rarr;</span></a></h2>' ); ?>
-			</header><!-- .entry-header -->
-
-		<?php } else { ?>
-
-			<div class="entry-content">
-				<?php the_content( __( 'Read more &rarr;', 'hybrid-base' ) ); ?>
-				<?php wp_link_pages( array( 'before' => '<p class="page-links">' . '<span class="before">' . __( 'Pages:', 'hybrid-base' ) . '</span>', 'after' => '</p>' ) ); ?>
-			</div><!-- .entry-content -->
-
-		<?php } ?>
+		<header class="entry-header">
+			<?php the_title( '<h2 ' . hybrid_get_attr( 'entry-title' ) . '><a href="' . hybrid_get_the_post_format_url() . '">', is_rtl() ? ' <span class="meta-nav">&larr;</span>' : ' <span class="meta-nav">&rarr;</span>' . '</a></h2>' ); ?>
+		</header><!-- .entry-header -->
 
 		<footer class="entry-footer">
-			<?php echo apply_atomic_shortcode( 'entry_meta', '<div class="entry-meta">' . __( '[post-format-link] published on [entry-published] [entry-permalink before="| "] [entry-comments-link before="| "] [entry-edit-link before="| "]', 'hybrid-base' ) . '</div>' ); ?>
+			<?php hybrid_post_format_link(); ?>
+			<time <?php hybrid_attr( 'entry-published' ); ?>><?php echo get_the_date(); ?></time>
+			<a class="entry-permalink" href="<?php the_permalink(); ?>" rel="bookmark" itemprop="url"><?php _e( 'Permalink', 'hybrid-base' ); ?></a>
+			<?php comments_popup_link( number_format_i18n( 0 ), number_format_i18n( 1 ), '%', 'comments-link', '' ); ?>
+			<?php edit_post_link(); ?>
 		</footer><!-- .entry-footer -->
 
-	<?php } ?>
+	<?php endif; // End single post check. ?>
 
-</article><!-- .hentry -->
+</article><!-- .entry -->

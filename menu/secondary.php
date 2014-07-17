@@ -1,16 +1,18 @@
-<?php if ( has_nav_menu( 'secondary' ) ) {
+<?php if ( has_nav_menu( 'secondary' ) ) : // Check if there's a menu assigned to the 'secondary' location. ?>
 
-	wp_nav_menu(
-		array(
-			'theme_location'  => 'secondary',
-			'container'       => 'nav',
-			'container_id'    => 'menu-secondary',
-			'container_class' => 'menu',
-			'menu_id'         => 'menu-secondary-items',
-			'menu_class'      => 'menu-items',
-			'fallback_cb'     => '',
-			'items_wrap'      => '<h3 class="menu-toggle" title="' . esc_attr__( 'Navigation', 'hybrid-base' ) . '">' . __( 'Navigation', 'hybrid-base' ) . '</h3><div class="wrap"><ul id="%1$s" class="%2$s">%3$s</ul></div>'
-		)
-	);
+	<nav <?php hybrid_attr( 'menu', 'secondary' ); ?>>
 
-} ?>
+		<?php wp_nav_menu(
+			array(
+				'theme_location'  => 'secondary',
+				'container'       => '',
+				'menu_id'         => 'menu-secondary-items',
+				'menu_class'      => 'menu-items',
+				'fallback_cb'     => '',
+				'items_wrap'      => '<div class="wrap"><ul id="%s" class="%s">%s</ul></div>'
+			)
+		); ?>
+
+	</nav><!-- #menu-secondary -->
+
+<?php endif; // End check for menu. ?>

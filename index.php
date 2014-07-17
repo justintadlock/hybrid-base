@@ -1,33 +1,37 @@
 <?php get_header(); // Loads the header.php template. ?>
 
-	<div id="content" class="hfeed">
+<main <?php hybrid_attr( 'content' ); ?>>
 
-		<?php get_template_part( 'loop-meta' ); // Loads the loop-meta.php template. ?>
+	<?php if ( !is_front_page() && !is_singular() && !is_404() ) : // If viewing a multi-post page ?>
 
-		<?php if ( have_posts() ) { ?>
+		<?php locate_template( array( 'misc/loop-meta.php' ), true ); // Loads the misc/loop-meta.php template. ?>
 
-			<?php while ( have_posts() ) { ?>
+	<?php endif; // End check for multi-post page. ?>
 
-				<?php the_post(); // Loads the post data. ?>
+	<?php if ( have_posts() ) : // Checks if any posts were found. ?>
 
-				<?php hybrid_get_content_template(); // Loads the content template. ?>
+		<?php while ( have_posts() ) : // Begins the loop through found posts. ?>
 
-				<?php if ( is_singular() ) { ?>
+			<?php the_post(); // Loads the post data. ?>
 
-					<?php comments_template(); // Loads the comments.php template. ?>
+			<?php hybrid_get_content_template(); // Loads the content/*.php template. ?>
 
-				<?php } // End if check. ?>
+			<?php if ( is_singular() ) : // If viewing a single post/page/CPT. ?>
 
-			<?php } // End while loop. ?>
+				<?php comments_template( '', true ); // Loads the comments.php template. ?>
 
-		<?php } else { ?>
+			<?php endif; // End check for single post. ?>
 
-			<?php get_template_part( 'loop-error' ); // Loads the loop-error.php template. ?>
+		<?php endwhile; // End found posts loop. ?>
 
-		<?php } // End if check. ?>
+		<?php locate_template( array( 'misc/loop-nav.php' ), true ); // Loads the misc/loop-nav.php template. ?>
 
-		<?php get_template_part( 'loop-nav' ); // Loads the loop-nav.php template. ?>
+	<?php else : // If no posts were found. ?>
 
-	</div><!-- #content -->
+		<?php locate_template( array( 'content/error.php' ), true ); // Loads the content/error.php template. ?>
+
+	<?php endif; // End check for posts. ?>
+
+</main><!-- #content -->
 
 <?php get_footer(); // Loads the footer.php template. ?>

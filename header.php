@@ -1,36 +1,45 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes( 'html' ); ?>>
 
 <head>
-
-<meta http-equiv="Content-Type" content="<?php bloginfo( 'html_type' ); ?>; charset=<?php bloginfo( 'charset' ); ?>" />
-<title><?php hybrid_document_title(); ?></title>
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-<?php wp_head(); // wp_head ?>
-
+<?php wp_head(); // Hook required for scripts, styles, and other <head> items. ?>
 </head>
 
-<body <?php hybrid_body_attributes(); ?>>
+<body <?php hybrid_attr( 'body' ); ?>>
 
 	<div id="container">
 
-		<?php get_template_part( 'menu', 'primary' ); // Loads the menu-primary.php template. ?>
+		<div class="skip-link">
+			<a href="#content" class="screen-reader-text"><?php _e( 'Skip to content', 'hybrid-base' ); ?></a>
+		</div><!-- .skip-link -->
 
-		<header id="header">
+		<?php hybrid_get_menu( 'primary' ); // Loads the menu/primary.php template. ?>
 
-			<hgroup id="branding">
-				<h1 id="site-title"><a href="<?php echo home_url(); ?>" title="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
-				<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
-			</hgroup><!-- #branding -->
+		<header <?php hybrid_attr( 'header' ); ?>>
+
+			<?php if ( display_header_text() ) : // If user chooses to display header text. ?>
+
+				<div <?php hybrid_attr( 'branding' ); ?>>
+					<?php hybrid_site_title(); ?>
+					<?php hybrid_site_description(); ?>
+				</div><!-- #branding -->
+
+			<?php endif; // End check for header text. ?>
 
 		</header><!-- #header -->
 
-		<?php if ( get_header_image() ) echo '<img class="header-image" src="' . esc_url( get_header_image() ) . '" alt="" />'; ?>
+		<?php hybrid_get_menu( 'secondary' ); // Loads the menu/secondary.php template. ?>
 
-		<?php get_template_part( 'menu', 'secondary' ); // Loads the menu-secondary.php template. ?>
+		<?php if ( get_header_image() && !display_header_text() ) : // If there's a header image but no header text. ?>
 
-		<div id="main">
+			<a href="<?php echo home_url(); ?>" title="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" rel="home"><img class="header-image" src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" /></a>
 
-			<?php get_template_part( 'breadcrumbs' ); // Loads the breadcrumbs.php template. ?>
+		<?php elseif ( get_header_image() ) : // If there's a header image. ?>
+
+			<img class="header-image" src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" />
+
+		<?php endif; // End check for header image. ?>
+
+		<div id="main" class="main">
+
+			<?php hybrid_get_menu( 'breadcrumbs' ); // Loads the menu/breadcrumbs.php template. ?>

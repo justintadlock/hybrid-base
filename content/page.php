@@ -1,32 +1,32 @@
-<article <?php hybrid_post_attributes(); ?>>
+<article <?php hybrid_attr( 'post' ); ?>>
 
-	<?php if ( is_singular( get_post_type() ) ) { ?>
+	<?php if ( is_page() ) : // If viewing a single page. ?>
 
 		<header class="entry-header">
-			<h1 class="entry-title"><?php single_post_title(); ?></h1>
+			<h1 <?php hybrid_attr( 'entry-title' ); ?>><?php single_post_title(); ?></h1>
 		</header><!-- .entry-header -->
 
-		<div class="entry-content">
+		<div <?php hybrid_attr( 'entry-content' ); ?>>
 			<?php the_content(); ?>
-			<?php wp_link_pages( array( 'before' => '<p class="page-links">' . '<span class="before">' . __( 'Pages:', 'hybrid-base' ) . '</span>', 'after' => '</p>' ) ); ?>
+			<?php wp_link_pages(); ?>
 		</div><!-- .entry-content -->
 
 		<footer class="entry-footer">
-			<?php echo apply_atomic_shortcode( 'entry_meta', '<div class="entry-meta">[entry-edit-link]</div>' ); ?>
+			<?php edit_post_link(); ?>
 		</footer><!-- .entry-footer -->
 
-	<?php } else { ?>
+	<?php else : // If not viewing a single page. ?>
+
+		<?php get_the_image(); ?>
 
 		<header class="entry-header">
-			<?php the_title( '<h2 class="entry-title"><a href="' . get_permalink() . '">', '</a></h2>' ); ?>
+			<?php the_title( '<h2 ' . hybrid_get_attr( 'entry-title' ) . '><a href="' . get_permalink() . '" rel="bookmark" itemprop="url">', '</a></h2>' ); ?>
 		</header><!-- .entry-header -->
 
-		<div class="entry-summary">
-			<?php if ( current_theme_supports( 'get-the-image' ) ) get_the_image(); ?>
+		<div <?php hybrid_attr( 'entry-summary' ); ?>>
 			<?php the_excerpt(); ?>
-			<?php wp_link_pages( array( 'before' => '<p class="page-links">' . '<span class="before">' . __( 'Pages:', 'hybrid-base' ) . '</span>', 'after' => '</p>' ) ); ?>
 		</div><!-- .entry-summary -->
 
-	<?php } ?>
+	<?php endif; // End single page check. ?>
 
-</article><!-- .hentry -->
+</article><!-- .entry -->

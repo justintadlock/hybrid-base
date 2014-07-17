@@ -1,13 +1,15 @@
-<?php if ( current_theme_supports( 'breadcrumb-trail' ) ) {
+<?php if ( function_exists( 'breadcrumb_trail' ) ) : // Check for breadcrumb support. ?>
 
-	breadcrumb_trail(
+	<?php breadcrumb_trail(
 		array( 
-			'container' => 'nav', 
-			'separator' => '>', 
-			'labels'    => array( 
+			'container'     => 'nav', 
+			'separator'     => '>', 
+			'show_on_front' => false,
+
+			'labels'        => array( 
 				'browse' => __( 'You are here:', 'hybrid-base' ) 
 			) 
 		) 
-	);
+	); ?>
 
-} ?>
+<?php endif; // End check for breadcrumb support. ?>
