@@ -6,6 +6,9 @@ add_action( 'init', 'hybrid_base_register_image_sizes', 5 );
 /* Register custom menus. */
 add_action( 'init', 'hybrid_base_register_menus', 5 );
 
+# Register custom layouts.
+add_action( 'hybrid_register_layouts', 'hybrid_base_register_layouts' );
+
 /* Register sidebars. */
 add_action( 'widgets_init', 'hybrid_base_register_sidebars', 5 );
 
@@ -16,7 +19,7 @@ add_action( 'wp_enqueue_scripts', 'hybrid_base_enqueue_scripts', 5 );
 add_action( 'wp_enqueue_scripts', 'hybrid_base_enqueue_styles', 5 );
 
 /**
- * Registers custom image sizes for the theme. 
+ * Registers custom image sizes for the theme.
  *
  * @since  1.0.0
  * @access public
@@ -39,6 +42,20 @@ function hybrid_base_register_menus() {
 	register_nav_menu( 'primary',    _x( 'Primary',    'nav menu location', 'hybrid-base' ) );
 	register_nav_menu( 'secondary',  _x( 'Secondary',  'nav menu location', 'hybrid-base' ) );
 	register_nav_menu( 'subsidiary', _x( 'Subsidiary', 'nav menu location', 'hybrid-base' ) );
+}
+
+/**
+ * Registers layouts.
+ *
+ * @since  1.0.0
+ * @access public
+ * @return void
+ */
+function hybrid_base_register_layouts() {
+
+	hybrid_register_layout( '1c',   array( 'label' => __( '1 Column',                     'hybrid-base' ), 'image' => '%s/images/layouts/1c.png'   ) );
+	hybrid_register_layout( '2c-l', array( 'label' => __( '2 Columns: Content / Sidebar', 'hybrid-base' ), 'image' => '%s/images/layouts/2c-l.png' ) );
+	hybrid_register_layout( '2c-r', array( 'label' => __( '2 Columns: Sidebar / Content', 'hybrid-base' ), 'image' => '%s/images/layouts/2c-r.png' ) );
 }
 
 /**

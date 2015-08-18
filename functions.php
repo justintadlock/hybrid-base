@@ -54,16 +54,8 @@ add_action( 'after_setup_theme', 'hybrid_base_theme_setup', 5 );
  */
 function hybrid_base_theme_setup() {
 
-	/* Theme layouts. */
-	add_theme_support( 
-		'theme-layouts', 
-		array(
-			'1c'        => __( '1 Column',                     'hybrid-base' ),
-			'2c-l'      => __( '2 Columns: Content / Sidebar', 'hybrid-base' ),
-			'2c-r'      => __( '2 Columns: Sidebar / Content', 'hybrid-base' )
-		),
-		array( 'default' => is_rtl() ? '2c-r' :'2c-l' ) 
-	);
+	// Theme layouts.
+	add_theme_support( 'theme-layouts', array( 'default' => is_rtl() ? '2c-r' :'2c-l' ) );
 
 	/* Enable custom template hierarchy. */
 	add_theme_support( 'hybrid-core-template-hierarchy' );
