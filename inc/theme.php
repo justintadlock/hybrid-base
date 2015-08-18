@@ -103,22 +103,17 @@ function hybrid_base_enqueue_scripts() {
  */
 function hybrid_base_enqueue_styles() {
 
-	/* Gets ".min" suffix. */
-	$suffix = hybrid_get_min_suffix();
+	// Load one-five base style.
+	wp_enqueue_style( 'hybrid-one-five' );
 
-	/* Load one-five base style. */
-	wp_enqueue_style( 'one-five', trailingslashit( HYBRID_CSS ) . "one-five{$suffix}.css" );
+	// Load gallery style if 'cleaner-gallery' is active.
+	if ( current_theme_supports( 'cleaner-gallery' ) )
+		wp_enqueue_style( 'hybrid-gallery' );
 
-	/* Load gallery style if 'cleaner-gallery' is active. */
-	if ( current_theme_supports( 'cleaner-gallery' ) ) {
-		wp_enqueue_style( 'gallery', trailingslashit( HYBRID_CSS ) . "gallery{$suffix}.css" );
-	}
+	// Load parent theme stylesheet if child theme is active.
+	if ( is_child_theme() )
+		wp_enqueue_style( 'hybrid-parent' );
 
-	/* Load parent theme stylesheet if child theme is active. */
-	if ( is_child_theme() ) {
-		wp_enqueue_style( 'parent', trailingslashit( get_template_directory_uri() ) . "style{$suffix}.css" );
-	}
-
-	/* Load active theme stylesheet. */
-	wp_enqueue_style( 'style', get_stylesheet_uri() );
+	// Load active theme stylesheet.
+	wp_enqueue_style( 'hybrid-style' );
 }
