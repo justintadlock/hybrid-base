@@ -1,13 +1,13 @@
-<div <?php hybrid_attr( 'loop-meta' ); ?>>
+<header <?php hybrid_attr( 'archive-header' ); ?>>
 
-	<h1 <?php hybrid_attr( 'loop-title' ); ?>><?php hybrid_loop_title(); ?></h1>
+	<h1 <?php hybrid_attr( 'archive-title' ); ?>><?php the_archive_title(); ?></h1>
 
-	<?php if ( !is_paged() && $desc = hybrid_get_loop_description() ) : // Check if we're on page/1. ?>
+	<?php if ( !is_paged() && $desc = get_the_archive_description() ) : // Check if we're on page/1. ?>
 
-		<div <?php hybrid_attr( 'loop-description' ); ?>>
+		<div <?php hybrid_attr( 'archive-description' ); ?>>
 			<?php echo $desc; ?>
-		</div><!-- .loop-description -->
+		</div><!-- .archive-description -->
 
 	<?php endif; // End paged check. ?>
 
-</div><!-- .loop-meta -->
+</header><!-- .archive-header -->
