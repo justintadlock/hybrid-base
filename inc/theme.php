@@ -1,22 +1,20 @@
 <?php
 
-/* Register custom image sizes. */
+# Register custom image sizes.
 add_action( 'init', 'hybrid_base_register_image_sizes', 5 );
 
-/* Register custom menus. */
+# Register custom menus.
 add_action( 'init', 'hybrid_base_register_menus', 5 );
 
 # Register custom layouts.
 add_action( 'hybrid_register_layouts', 'hybrid_base_register_layouts' );
 
-/* Register sidebars. */
+# Register sidebars.
 add_action( 'widgets_init', 'hybrid_base_register_sidebars', 5 );
 
-/* Add custom scripts. */
+# Add custom scripts and styles
 add_action( 'wp_enqueue_scripts', 'hybrid_base_enqueue_scripts', 5 );
-
-/* Add custom styles. */
-add_action( 'wp_enqueue_scripts', 'hybrid_base_enqueue_styles', 5 );
+add_action( 'wp_enqueue_scripts', 'hybrid_base_enqueue_styles',  5 );
 
 /**
  * Registers custom image sizes for the theme.
@@ -27,7 +25,7 @@ add_action( 'wp_enqueue_scripts', 'hybrid_base_enqueue_styles', 5 );
  */
 function hybrid_base_register_image_sizes() {
 
-	/* Sets the 'post-thumbnail' size. */
+	// Sets the 'post-thumbnail' size.
 	//set_post_thumbnail_size( 150, 150, true );
 }
 

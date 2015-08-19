@@ -19,7 +19,7 @@
 			<h1 <?php hybrid_attr( 'entry-title' ); ?>><?php single_post_title(); ?></h1>
 
 			<div class="entry-byline">
-				<span class="image-sizes"><?php printf( __( 'Sizes: %s', 'hybrid-base' ), hybrid_get_image_size_links() ); ?></span>
+				<span class="image-sizes"><?php printf( esc_html__( 'Sizes: %s', 'hybrid-base' ), hybrid_get_image_size_links() ); ?></span>
 			</div><!-- .entry-byline -->
 
 		</header><!-- .entry-header -->
@@ -73,11 +73,10 @@
 			</ul>
 
 		</div><!-- .media-info -->
-		</div><!-- .media-info -->
 
 		<?php $gallery = gallery_shortcode( array( 'columns' => 4, 'numberposts' => 8, 'orderby' => 'rand', 'id' => get_queried_object()->post_parent, 'exclude' => get_the_ID() ) ); ?>
 
-		<?php if ( !empty( $gallery ) ) : // Check if the gallery is not empty. ?>
+		<?php if ( $gallery ) : // Check if the gallery is not empty. ?>
 
 			<div class="image-gallery">
 				<h3 class="attachment-meta-title"><?php esc_html_e( 'Gallery', 'hybrid-base' ); ?></h3>

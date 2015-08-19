@@ -50,7 +50,7 @@
 				<?php the_excerpt(); ?>
 			</div><!-- .entry-summary -->
 
-		<?php elseif ( empty( $video ) ) : // Else, if the post does not have a video. ?>
+		<?php elseif ( ! $video ) : // Else, if the post does not have a video. ?>
 
 			<div <?php hybrid_attr( 'entry-content' ); ?>>
 				<?php the_content(); ?>

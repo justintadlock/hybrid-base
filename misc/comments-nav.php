@@ -7,7 +7,7 @@
 		<?php previous_comments_link( esc_html_x( '&larr; Previous', 'comments navigation', 'hybrid-base' ) ); ?>
 
 		<span class="page-numbers"><?php 
-			/* Translators: Comments page numbers. 1 is current page and 2 is total pages. */
+			// Translators: Comments page numbers. 1 is current page and 2 is total pages.
 			printf( esc_html__( 'Page %1$s of %2$s', 'hybrid-base' ), get_query_var( 'cpage' ) ? absint( get_query_var( 'cpage' ) ) : 1, get_comment_pages_count() ); 
 		?></span>
 

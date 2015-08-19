@@ -38,7 +38,7 @@
 			<?php the_content(); ?>
 		</div><!-- .entry-content -->
 
-		<?php if ( !get_option( 'show_avatars' ) ) : // If avatars are not enabled. ?>
+		<?php if ( ! get_option( 'show_avatars' ) ) : // If avatars are not enabled. ?>
 
 			<footer class="entry-footer">
 				<?php hybrid_post_format_link(); ?>

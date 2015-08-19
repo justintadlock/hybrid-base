@@ -50,7 +50,7 @@
 				<?php the_excerpt(); ?>
 			</div><!-- .entry-summary -->
 
-		<?php elseif ( empty( $audio ) ) : // Else, if the post does not have audio. ?>
+		<?php elseif ( ! $audio ) : // Else, if the post does not have audio. ?>
 
 			<div <?php hybrid_attr( 'entry-content' ); ?>>
 				<?php the_content(); ?>

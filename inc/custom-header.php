@@ -1,6 +1,6 @@
 <?php
 
-/* Call late so child themes can override. */
+# Call late so child themes can override.
 add_action( 'after_setup_theme', 'hybrid_base_custom_header_setup', 15 );
 
 /**
@@ -12,9 +12,8 @@ add_action( 'after_setup_theme', 'hybrid_base_custom_header_setup', 15 );
  */
 function hybrid_base_custom_header_setup() {
 
-	/* Adds support for WordPress' "custom-header" feature. */
-	add_theme_support( 
-		'custom-header', 
+	add_theme_support(
+		'custom-header',
 		array(
 			'default-image'          => '',
 			'random-default'         => false,
@@ -29,7 +28,7 @@ function hybrid_base_custom_header_setup() {
 		)
 	);
 
-	/* Registers default headers for the theme. */
+	// Registers default headers for the theme.
 	//register_default_headers();
 }
 
@@ -42,12 +41,12 @@ function hybrid_base_custom_header_setup() {
  */
 function hybrid_base_custom_header_wp_head() {
 
-	if ( !display_header_text() )
+	if ( ! display_header_text() )
 		return;
 
 	$hex = get_header_textcolor();
 
-	if ( empty( $hex ) )
+	if ( ! $hex )
 		return;
 
 	$style = "body.custom-header #site-title a { color: #{$hex}; }";

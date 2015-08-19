@@ -7,4 +7,4 @@
 		<?php edit_comment_link(); ?>
 	</header><!-- .comment-meta -->
 
-<?php /* No closing </li> is needed.  WordPress will know where to add it. */ ?>
+<?php // No closing </li> is needed.  WordPress will know where to add it. ?>
