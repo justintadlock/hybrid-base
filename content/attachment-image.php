@@ -56,7 +56,7 @@
 
 		<div class="media-info image-info">
 
-			<h3 class="attachment-meta-title"><?php _e( 'Image Info', 'hybrid-base' ); ?></h3>
+			<h3 class="attachment-meta-title"><?php esc_html_e( 'Image Info', 'hybrid-base' ); ?></h3>
 
 			<ul class="media-meta">
 				<?php $pre = '<li><span class="prep">%s</span>'; ?>
@@ -80,7 +80,7 @@
 		<?php if ( !empty( $gallery ) ) : // Check if the gallery is not empty. ?>
 
 			<div class="image-gallery">
-				<h3 class="attachment-meta-title"><?php _e( 'Gallery', 'hybrid-base' ); ?></h3>
+				<h3 class="attachment-meta-title"><?php esc_html_e( 'Gallery', 'hybrid-base' ); ?></h3>
 				<?php echo $gallery; ?>
 			</div>
 

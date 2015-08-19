@@ -39,9 +39,9 @@ function hybrid_base_register_image_sizes() {
  * @return void
  */
 function hybrid_base_register_menus() {
-	register_nav_menu( 'primary',    _x( 'Primary',    'nav menu location', 'hybrid-base' ) );
-	register_nav_menu( 'secondary',  _x( 'Secondary',  'nav menu location', 'hybrid-base' ) );
-	register_nav_menu( 'subsidiary', _x( 'Subsidiary', 'nav menu location', 'hybrid-base' ) );
+	register_nav_menu( 'primary',    esc_html_x( 'Primary',    'nav menu location', 'hybrid-base' ) );
+	register_nav_menu( 'secondary',  esc_html_x( 'Secondary',  'nav menu location', 'hybrid-base' ) );
+	register_nav_menu( 'subsidiary', esc_html_x( 'Subsidiary', 'nav menu location', 'hybrid-base' ) );
 }
 
 /**
@@ -53,9 +53,9 @@ function hybrid_base_register_menus() {
  */
 function hybrid_base_register_layouts() {
 
-	hybrid_register_layout( '1c',   array( 'label' => __( '1 Column',                     'hybrid-base' ), 'image' => '%s/images/layouts/1c.png'   ) );
-	hybrid_register_layout( '2c-l', array( 'label' => __( '2 Columns: Content / Sidebar', 'hybrid-base' ), 'image' => '%s/images/layouts/2c-l.png' ) );
-	hybrid_register_layout( '2c-r', array( 'label' => __( '2 Columns: Sidebar / Content', 'hybrid-base' ), 'image' => '%s/images/layouts/2c-r.png' ) );
+	hybrid_register_layout( '1c',   array( 'label' => esc_html__( '1 Column',                     'hybrid-base' ), 'image' => '%s/images/layouts/1c.png'   ) );
+	hybrid_register_layout( '2c-l', array( 'label' => esc_html__( '2 Columns: Content / Sidebar', 'hybrid-base' ), 'image' => '%s/images/layouts/2c-l.png' ) );
+	hybrid_register_layout( '2c-r', array( 'label' => esc_html__( '2 Columns: Sidebar / Content', 'hybrid-base' ), 'image' => '%s/images/layouts/2c-r.png' ) );
 }
 
 /**
@@ -70,16 +70,16 @@ function hybrid_base_register_sidebars() {
 	hybrid_register_sidebar(
 		array(
 			'id'          => 'primary',
-			'name'        => _x( 'Primary', 'sidebar', 'hybrid-base' ),
-			'description' => __( 'Add sidebar description.', 'hybrid-base' )
+			'name'        => esc_html_x( 'Primary', 'sidebar', 'hybrid-base' ),
+			'description' => esc_html__( 'Add sidebar description.', 'hybrid-base' )
 		)
 	);
 
 	hybrid_register_sidebar(
 		array(
 			'id'          => 'subsidiary',
-			'name'        => _x( 'Subsidiary', 'sidebar', 'hybrid-base' ),
-			'description' => __( 'Add sidebar description.', 'hybrid-base' )
+			'name'        => esc_html_x( 'Subsidiary', 'sidebar', 'hybrid-base' ),
+			'description' => esc_html__( 'Add sidebar description.', 'hybrid-base' )
 		)
 	);
 }

@@ -7,7 +7,7 @@
 			'show_on_front' => false,
 
 			'labels'        => array( 
-				'browse' => __( 'You are here:', 'hybrid-base' ) 
+				'browse' => esc_html__( 'You are here:', 'hybrid-base' ) 
 			) 
 		) 
 	); ?>

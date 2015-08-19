@@ -24,7 +24,7 @@
 
 		<div class="media-info">
 
-			<h3><?php _e( 'Audio Info', 'hybrid-base' ); ?></h3>
+			<h3><?php esc_html_e( 'Audio Info', 'hybrid-base' ); ?></h3>
 
 			<ul class="media-meta">
 				<?php $pre = '<li><span class="prep">%s</span>'; ?>
