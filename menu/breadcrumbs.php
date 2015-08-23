@@ -2,8 +2,7 @@
 
 	<?php breadcrumb_trail(
 		array( 
-			'container'     => 'nav', 
-			'separator'     => '>', 
+			'container'     => 'nav',
 			'show_on_front' => false,
 
 			'labels'        => array( 
