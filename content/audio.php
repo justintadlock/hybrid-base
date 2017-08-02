@@ -1,6 +1,6 @@
 <article <?php hybrid_attr( 'post' ); ?>>
 
-	<?php echo ( $audio = hybrid_media_grabber( array( 'type' => 'audio', 'split_media' => true ) ) ); ?>
+	<?php echo ( $audio = hybrid_get_post_media( array( 'type' => 'audio', 'split_media' => true ) ) ); ?>
 
 	<?php if ( is_singular( get_post_type() ) ) : // If viewing a single post. ?>
 

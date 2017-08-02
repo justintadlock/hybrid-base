@@ -38,9 +38,6 @@ require_once( $hybrid_base_dir . 'inc/custom-background.php' );
 require_once( $hybrid_base_dir . 'inc/custom-header.php'     );
 require_once( $hybrid_base_dir . 'inc/theme.php'             );
 
-// Launch the Hybrid Core framework.
-new Hybrid();
-
 // Do theme setup on the 'after_setup_theme' hook.
 add_action( 'after_setup_theme', 'hybrid_base_theme_setup', 5 );
 
