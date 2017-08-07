@@ -8,7 +8,7 @@
 
 	<?php endif; // End check for multi-post page. ?>
 
-	<?php if ( have_posts() ) : // Checks if any posts were found. ?>
+	<?php if ( have_posts() && !is_404() ) : // Checks if any posts were found. ?>
 
 		<?php while ( have_posts() ) : // Begins the loop through found posts. ?>
 
